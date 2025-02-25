@@ -1,0 +1,113 @@
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center; 
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  max-width: 300px;
+  transition: transform 0.5s; /* Smooth transition for 3D effect */
+}
+
+.booking-form:hover {
+  transform: rotateY(10deg) rotateX(5deg); /* Rotate on hover */
+}
+
+.booking-form input {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.booking-form input:focus {
+  transform: scale(1.05);
+  border-color: #007bff;
+}
+
+.booking-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+  background-color: #0056b3;
+}
+
+.booking-list {
+  margin-top: 20px;
+}
+
+.booking-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 300px;
+  transition: transform 0.5s; /* Smooth transition for 3D effect */
+  transform-style: preserve-3d; /* Preserve 3D effect */
+}
+
+.booking-item:hover {
+  transform: rotateY(5deg) rotateX(2deg); /* Rotate on hover */
+}
+
+.booking-item h3 {
+  margin: 0;
+}
+
+.booking-item p {
+  margin: 5px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  perspective: 1000px; /* Enable 3D perspective */
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  transition: transform 0.3s; /* Animation effect */
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr {
+  transition: transform 0.3s; /* Animation effect */
+}
+
+table tr:hover {
+  transform: translateZ(10px); /* 3D effect on hover */
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
